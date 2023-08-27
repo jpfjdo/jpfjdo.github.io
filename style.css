@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+    padding: 20px 0; /* Increase the top and bottom padding */
+}
+
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-right: 30px; /* Increase the right margin */
+    flex: 1; /* Distribute available space evenly among menu items */
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Your Aesthetic Font', sans-serif; /* Change to your desired font */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #ffc107;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ensure good contrast and visibility */
+.dropdown-menu li a {
+    color: #333; /* Set the desired font color */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold; /* Bold for main menu items */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Unbold submenus */
+.dropdown-menu .submenu li a {
+    font-weight: normal;
+}
+
+/* Section styles */
+section {
+    padding: 2rem;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
